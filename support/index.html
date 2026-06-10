@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>KyPDF — Support</title>
+<meta name="description" content="KyPDF support and FAQ. Contact, subscriptions, conversions, privacy.">
+<style>
+  :root{--amber:#FF8820;--blue:#5858C0;--text:#1d1d22;--muted:#6b6b73;--bg:#f6f6f9;--line:#e6e6ec}
+  *{box-sizing:border-box}
+  body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.6}
+  a{color:var(--amber);text-decoration:none}a:hover{text-decoration:underline}
+  .hero{background:linear-gradient(135deg,var(--blue),var(--amber));color:#fff;padding:48px 20px 40px}
+  .wrap{max-width:760px;margin:0 auto;padding:0 20px}
+  .brand{display:flex;align-items:center;gap:12px;font-weight:800;font-size:26px}
+  .brand svg{width:34px;height:34px}
+  .hero h1{margin:18px 0 6px;font-size:30px;font-weight:800}.hero p{margin:0;opacity:.92}
+  main{max-width:760px;margin:-22px auto 60px;background:#fff;border:1px solid var(--line);border-radius:18px;padding:28px;box-shadow:0 10px 30px rgba(0,0,0,.06)}
+  .toggle{display:flex;gap:8px;margin:0 0 18px}
+  .toggle button{border:1px solid var(--line);background:#fff;color:var(--text);padding:6px 14px;border-radius:999px;font-size:14px;cursor:pointer}
+  .toggle button.active{background:var(--amber);color:#fff;border-color:var(--amber)}
+  .contact{background:rgba(255,136,32,.10);border:1px solid rgba(255,136,32,.25);border-radius:14px;padding:16px 18px;margin:0 0 22px}
+  .contact a{font-weight:700}
+  h2{font-size:18px;margin:22px 0 6px}
+  details{border:1px solid var(--line);border-radius:12px;padding:4px 14px;margin:10px 0;background:#fff}
+  summary{cursor:pointer;font-weight:600;padding:10px 0}
+  details p{margin:0 0 12px}
+  footer{max-width:760px;margin:0 auto 50px;padding:0 28px;color:var(--muted);font-size:13px;text-align:center}
+  .lang[hidden]{display:none}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <div class="brand">
+      <svg viewBox="0 0 24 24" fill="#fff" aria-hidden="true"><path d="M14 2H7a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V7l-5-5zm0 2.5L16.5 7H14V4.5zM8.5 12h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1 0-1.5zm0 3.5h7a.75.75 0 0 1 0 1.5h-7a.75.75 0 0 1 0-1.5z"/></svg>
+      KyPDF
+    </div>
+    <h1>Support</h1>
+    <p>We're here to help.</p>
+  </div>
+</header>
+
+<main>
+  <div class="toggle">
+    <button id="btn-en" class="active" onclick="setLang('en')">English</button>
+    <button id="btn-pt" onclick="setLang('pt')">Português</button>
+  </div>
+
+  <div class="contact">
+    📧 <strong>Contact:</strong> <a href="mailto:bertini.b@icloud.com">bertini.b@icloud.com</a>
+    — <span class="lang" id="resp-en">we usually reply within 48 hours.</span>
+    <span class="lang" id="resp-pt" hidden>normalmente respondemos em até 48 horas.</span>
+  </div>
+
+  <!-- ENGLISH -->
+  <section class="lang" id="lang-en">
+    <h2>Frequently asked questions</h2>
+
+    <details><summary>Is my data safe? Where is it stored?</summary>
+      <p>Yes. KyPDF is 100% offline. Every document is processed and stored only on your iPhone,
+         protected by iOS file protection. No accounts, no cloud of ours, no tracking. See the
+         <a href="../privacy/">Privacy Policy</a>.</p></details>
+
+    <details><summary>How do I restore my purchase?</summary>
+      <p>Open <strong>Settings → Restore Purchases</strong> inside the app. Purchases and subscriptions
+         are tied to your Apple ID, so they restore on any device signed in with the same account.</p></details>
+
+    <details><summary>How do I cancel my subscription?</summary>
+      <p>Subscriptions are managed by Apple: open the <strong>App Store</strong> → tap your photo →
+         <strong>Subscriptions</strong> → KyPDF → Cancel. Your access stays active until the end of the
+         current period.</p></details>
+
+    <details><summary>What does the free version include?</summary>
+      <p>Unlimited scanning and image-to-PDF, text-to-PDF, metadata and read aloud, plus 3 uses per week
+         on each other tool. Pro removes the limits and unlocks Word/Excel/PowerPoint conversions,
+         OCR searchable PDF and PDF/A.</p></details>
+
+    <details><summary>How much is Pro?</summary>
+      <p>Monthly (auto-renewable) or a one-time Lifetime purchase that covers all current and future
+         features. Prices are shown in your local currency on the paywall. Subscriptions renew
+         automatically unless canceled at least 24 hours before the end of the period.</p></details>
+
+    <details><summary>Why isn't a converted file perfect?</summary>
+      <p>Conversions (PDF ↔ Word/Excel/PowerPoint, HTML → slides) run fully on device without a server.
+         Complex layouts, custom fonts or scanned pages may differ from the original. For scanned PDFs,
+         run <strong>Searchable PDF (OCR)</strong> first so the text can be recognized.</p></details>
+
+    <details><summary>Does it work in other languages?</summary>
+      <p>Yes — English and Portuguese (Brazil), selected automatically by your device language. OCR
+         recognizes the languages set on your device.</p></details>
+
+    <details><summary>Where are my saved files?</summary>
+      <p>Saved PDFs live in the app and in the <strong>Files</strong> app under <strong>KyPDF</strong>.
+         You can share or export any result to Files, Mail or another app at any time.</p></details>
+  </section>
+
+  <!-- PORTUGUÊS -->
+  <section class="lang" id="lang-pt" hidden>
+    <h2>Perguntas frequentes</h2>
+
+    <details><summary>Meus dados estão seguros? Onde ficam?</summary>
+      <p>Sim. O KyPDF é 100% offline. Todo documento é processado e armazenado só no seu iPhone,
+         protegido pela proteção de arquivos do iOS. Sem contas, sem nuvem nossa, sem rastreamento.
+         Veja a <a href="../privacy/">Política de Privacidade</a>.</p></details>
+
+    <details><summary>Como restauro minha compra?</summary>
+      <p>Abra <strong>Ajustes → Restaurar compras</strong> dentro do app. Compras e assinaturas ficam
+         vinculadas ao seu Apple ID e são restauradas em qualquer aparelho com a mesma conta.</p></details>
+
+    <details><summary>Como cancelo a assinatura?</summary>
+      <p>As assinaturas são gerenciadas pela Apple: abra a <strong>App Store</strong> → toque na sua foto →
+         <strong>Assinaturas</strong> → KyPDF → Cancelar. O acesso continua até o fim do período atual.</p></details>
+
+    <details><summary>O que a versão gratuita inclui?</summary>
+      <p>Digitalização e imagem-para-PDF ilimitadas, texto-para-PDF, metadados e leitura em voz alta, além
+         de 3 usos por semana em cada outra ferramenta. O Pro tira os limites e libera conversões
+         Word/Excel/PowerPoint, PDF pesquisável (OCR) e PDF/A.</p></details>
+
+    <details><summary>Quanto custa o Pro?</summary>
+      <p>Mensal (renovação automática) ou compra única Vitalícia, que cobre todos os recursos atuais e
+         futuros. Os preços aparecem na sua moeda local no paywall. As assinaturas renovam
+         automaticamente, salvo cancelamento até 24 horas antes do fim do período.</p></details>
+
+    <details><summary>Por que o arquivo convertido não ficou perfeito?</summary>
+      <p>As conversões (PDF ↔ Word/Excel/PowerPoint, HTML → slides) rodam totalmente no aparelho, sem
+         servidor. Layouts complexos, fontes específicas ou páginas escaneadas podem diferir do original.
+         Para PDFs escaneados, use antes o <strong>PDF pesquisável (OCR)</strong> para reconhecer o texto.</p></details>
+
+    <details><summary>Funciona em outros idiomas?</summary>
+      <p>Sim — Inglês e Português (Brasil), escolhidos automaticamente pelo idioma do aparelho. O OCR
+         reconhece os idiomas configurados no seu dispositivo.</p></details>
+
+    <details><summary>Onde ficam meus arquivos salvos?</summary>
+      <p>Os PDFs salvos ficam no app e no app <strong>Arquivos</strong>, na pasta <strong>KyPDF</strong>.
+         Você pode compartilhar ou exportar qualquer resultado para Arquivos, Mail ou outro app quando
+         quiser.</p></details>
+  </section>
+</main>
+
+<footer>© 2026 KyPDF · <a href="../">Home</a> · <a href="../privacy/">Privacy</a></footer>
+
+<script>
+  function setLang(l){
+    document.querySelectorAll('#lang-en,#resp-en').forEach(e=>e.hidden=(l!=='en'));
+    document.querySelectorAll('#lang-pt,#resp-pt').forEach(e=>e.hidden=(l!=='pt'));
+    document.getElementById('btn-en').classList.toggle('active', l==='en');
+    document.getElementById('btn-pt').classList.toggle('active', l==='pt');
+    document.documentElement.lang = l==='pt' ? 'pt-BR' : 'en';
+  }
+  if((navigator.language||'').toLowerCase().startsWith('pt')) setLang('pt');
+</script>
+</body>
+</html>
